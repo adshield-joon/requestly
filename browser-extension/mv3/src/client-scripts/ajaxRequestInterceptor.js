@@ -163,6 +163,7 @@ import { PUBLIC_NAMESPACE } from "common/constants";
   const onReadyStateChange = async function () {
     if (
       this.readyState === this.HEADERS_RECEIVED ||
+      this.readyState === this.LOADING ||
       this.readyState === this.DONE
     ) {
       let url;
